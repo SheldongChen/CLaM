@@ -113,7 +113,7 @@ python train_tex_mot_match.py --name text_mot_match --gpu_id 0 --batch_size 64 -
 ## Comparison on Existing Text-to-Motion Algorithms
 
 
-### Testing  [[T2M (CVPR 2022)]](https://openaccess.thecvf.com/content/CVPR2022/papers/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.pdf)  Algorithm
+### Testing  [T2M](https://openaccess.thecvf.com/content/CVPR2022/papers/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.pdf) (CVPR 2022)  Algorithm
 
 #### HumanML3D-synthesis
 ```sh

@@ -1,0 +1,1 @@
+If an error occurs related to 'caption', use "eval_wrapper.get_co_embeddings(word_embeddings, ..., m_length, caption=list(clip_text))" to replace "eval_wrapper.get_co_embeddings(word_embeddings, ..., m_length)".
