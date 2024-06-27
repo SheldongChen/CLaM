@@ -1,4 +1,7 @@
-# CLaM: A Powerful Contrastive Language-and-Motion Pre-training Evaluator
+# CLaM: An Open-Source Library for Performance Evaluation of Text-driven Human Motion Generation
+
+## Introduction
+An open-source library with a powerful Contrastive Language-and-Motion (CLaM) pre-training evaluator, which can be employed for evaluating a variety of text-driven human motion generation algorithms and motion-to-text/text-to-motion retrieval.
 
 
 ## Python Virtual Environment
@@ -134,3 +137,9 @@ This will evaluate the performance of default motion generator named 'T2M' train
 
 ### Testing others
 For other text-to-motion algorithms, you can find in [projects/](https://github.com/SheldongChen/CLaM/tree/main/projects)
+
+## License
+CLaM is released under the [MIT License](https://github.com/SheldongChen/CLaM/blob/main/LICENSE).
+
+## Acknowledgement
+This repo is implemented based on [text-to-motion](https://github.com/EricGuo5513/text-to-motion) and [CLIP](https://github.com/openai/CLIP).
