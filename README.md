@@ -120,6 +120,9 @@ python train_tex_mot_match.py --name text_mot_match --gpu_id 0 --batch_size 64 -
 python final_evaluations.py --gpu 0 
 ```
 This will evaluate the performance of default motion generator named 'T2M' trained by Chuan Guo.
+The following table shows the evaluation results on HumanML3D-synthesis test set with different text-to-motion algorithms.
+
+<img src="docs/HumanML3D-generators.png" width="50%">
 
 #### KIT-ML-synthesis
 ```sh
