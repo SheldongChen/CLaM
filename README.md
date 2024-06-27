@@ -1,4 +1,4 @@
-# CLaM: A Powerful Contrastive Language-and-Motion Pre-training Paradigm
+# CLaM: A Powerful Contrastive Language-and-Motion Pre-training Evaluator
 
 
 ## Python Virtual Environment
@@ -66,35 +66,38 @@ Anaconda is recommended to create this virtual environment.
 ./checkpoints/t2m/length_est_bigru/        # Text-to-length sampling model
 ./checkpoints/t2m/text_mot_match/          # Motion & Text feature extractors CLaM for evaluation
  ```
+
+
+#### The Statistics for our HumanML3D-synthesis dataset. 
+The following table shows the distribution of the word POS (Part of Speech) in the HumanML3D dataset and our dataset. \#NUM means the number of words for each POS, and \#L represents the proportion (percentage) of words for each POS.
+![Alt Text](docs/statistics.png)
+
+
  #### Download models for KIT-ML-synthesis [[here]](https://drive.google.com/drive/folders/1mYLapj1UA6zkvoDE3NvwIKaV9SyyKChx?usp=sharing). Unzip and place them under checkpoint directory.
     
+## Comparison on GT Motion Sequences
 
-
-## Testing CLaM Models
+### Testing CLaM Models
 
 #### HumanML3D-synthesis
 ```sh
 python final_evaluations.py --gpu 0 --only_gt
 ```
 This will evaluate the performance on gt of HumanML3D-synthesis dataset.
+The following table shows the comparison with different evaluators and retrievers on HumanML3D-synthesis test set using ground-truth motion sequences.
 
-```sh
-python final_evaluations.py --gpu 0 
-```
-This will evaluate the performance of default motion generator named 'text to motion' trained by Chuan Guo.
+![Alt Text](docs/HumanML3D-GT.png)
 
 #### KIT-ML-synthesis
 ```sh
 python final_evaluations_kit.py --gpu 0 --only_gt
 ```
 This will evaluate the performance on gt of KIT-ML-synthesis dataset. 
+The following table shows the comparison with different evaluators and retrievers on KIT-ML-synthesis test set using ground-truth motion sequences.
 
-```sh
-python final_evaluations_kit.py --gpu 0
-```
-This will evaluate the performance of default motion generator named 'text to motion' trained by Chuan Guo.
+![Alt Text](docs/KIT-ML-GT.png)
 
-## Training CLaM Models
+### Training CLaM Models
  All intermediate meta files/animations/models will be saved to checkpoint directory under the folder specified by argument "--name".
 
 #### HumanML3D-synthesis
@@ -105,3 +108,24 @@ python train_tex_mot_match.py --name text_mot_match --gpu_id 0 --batch_size 64 -
 ```sh
 python train_tex_mot_match.py --name text_mot_match --gpu_id 0 --batch_size 64 --dataset_name kit --lr 3e-5 --use_adamw --adamw_weight_decay 1e-1 --beta2 0.999 --eps 1e-8 --use_transformers --use_transformers_pretrain --tau 0.1 --alpha 0.02
 ```
+
+
+## Comparison on Existing Text-to-Motion Algorithms
+
+
+### Testing  [[T2M (CVPR 2022)]](https://openaccess.thecvf.com/content/CVPR2022/papers/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.pdf)  Algorithm
+
+#### HumanML3D-synthesis
+```sh
+python final_evaluations.py --gpu 0 
+```
+This will evaluate the performance of default motion generator named 'T2M' trained by Chuan Guo.
+
+#### KIT-ML-synthesis
+```sh
+python final_evaluations_kit.py --gpu 0
+```
+This will evaluate the performance of default motion generator named 'T2M' trained by Chuan Guo.
+
+### Testing others
+For other text-to-motion algorithms, you can find in [projects/](https://github.com/SheldongChen/CLaM/tree/main/projects)
