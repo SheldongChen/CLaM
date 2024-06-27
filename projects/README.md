@@ -7,7 +7,7 @@
 - [x] [Motion Diffuse](https://github.com/mingyuan-zhang/MotionDiffuse) (TPAMI'24).
 - [x] [T2M-GPT](https://github.com/Mael-zys/T2M-GPT) (CVPR'23).
 - [x] [MotionGPT](https://github.com/OpenMotionLab/MotionGPT) (NeurIPS'23).
-- [ ] [MoMask](https://github.com/EricGuo5513/momask-codes) (CVPR'24).
+- [x] [MoMask](https://github.com/EricGuo5513/momask-codes) (CVPR'24).
 
 
 ### How to Evaluation on above Algorithms?

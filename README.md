@@ -42,6 +42,11 @@ Anaconda is recommended to create this virtual environment.
   ./dataset/HumanML3D/all.txt 
   ```
 
+#### The Statistics for our HumanML3D-synthesis dataset. 
+The following table shows the distribution of the word POS (Part of Speech) in the HumanML3D dataset and our dataset. \#NUM means the number of words for each POS, and \#L represents the proportion (percentage) of words for each POS.
+
+<img src="docs/statistics.png" width="50%">
+
  ### Pre-trained Models for CLIP
   Create a checkpoint folder to place pre-traine models:
   ```sh
@@ -68,10 +73,7 @@ Anaconda is recommended to create this virtual environment.
  ```
 
 
-#### The Statistics for our HumanML3D-synthesis dataset. 
-The following table shows the distribution of the word POS (Part of Speech) in the HumanML3D dataset and our dataset. \#NUM means the number of words for each POS, and \#L represents the proportion (percentage) of words for each POS.
 
-<img src="docs/statistics.png" width="50%">
 
  #### Download models for KIT-ML-synthesis [[here]](https://drive.google.com/drive/folders/1mYLapj1UA6zkvoDE3NvwIKaV9SyyKChx?usp=sharing). Unzip and place them under checkpoint directory.
     
