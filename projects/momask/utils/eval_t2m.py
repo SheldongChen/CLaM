@@ -9,14 +9,6 @@ import torch.nn.functional as F
 # import visualization.plot_3d_global as plot_3d
 from utils.motion_process import recover_from_ric
 #
-#
-# def tensorborad_add_video_xyz(writer, xyz, nb_iter, tag, nb_vis=4, title_batch=None, outname=None):
-#     xyz = xyz[:1]
-#     bs, seq = xyz.shape[:2]
-#     xyz = xyz.reshape(bs, seq, -1, 3)
-#     plot_xyz = plot_3d.draw_to_batch(xyz.cpu().numpy(), title_batch, outname)
-#     plot_xyz = np.transpose(plot_xyz, (0, 1, 4, 2, 3))
-#     writer.add_video(tag, plot_xyz, nb_iter, fps=20)
 
 
 @torch.no_grad()
