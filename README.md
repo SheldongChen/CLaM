@@ -143,3 +143,16 @@ CLaM is released under the [MIT License](https://github.com/SheldongChen/CLaM/bl
 
 ## Acknowledgement
 This repo is implemented based on [text-to-motion](https://github.com/EricGuo5513/text-to-motion) and [CLIP](https://github.com/openai/CLIP).
+
+## **Citing CLaM**
+
+If you use CLaM in your research, please use the following BibTeX entry.
+
+```BibTeX
+@inproceedings{chen2024clam,
+title={CLaM: An Open-Source Library for Performance Evaluation of Text-driven Human Motion Generation},
+author={Xiaodong Chen and Kunlang He and Wu Liu and Xinchen Liu and Zheng-Jun Zha and Tao Mei},
+booktitle={ACM Multimedia (ACM MM)},
+year={2024}
+}
+```
