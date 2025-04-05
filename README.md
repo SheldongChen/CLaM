@@ -3,6 +3,10 @@
 ## Introduction
 An open-source library with a powerful Contrastive Language-and-Motion (CLaM) pre-training evaluator, which can be employed for evaluating a variety of text-driven human motion generation algorithms and motion-to-text/text-to-motion retrieval.
 
+## 🔥News🔥
+We have release the code of [[CLaM-H]](https://github.com/SheldongChen/CLaM-H) and [[CLaM-X]](https://github.com/SheldongChen/CLaM-X).
+CLaM-H is an extension of CLaM which is used to evaluate text-driven [body-hand]() human motion generation.
+CLaM-X is an extension of CLaM which is used to evaluate text-driven [whole-body]() human motion generation
 
 ## Python Virtual Environment
 
